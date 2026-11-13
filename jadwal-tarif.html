@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jadwal & Tarif - PT ASDP Indonesia Ferry</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header id="rayival_header">
+    <div class="rayival_container rayival_nav_wrapper">
+      <a href="index.html" class="rayival_logo">
+        <img src="assets/logo.png" alt="Logo PT ASDP Indonesia Ferry" class="rayival_logo_img" />
+      </a>
+      <nav id="rayival_nav_menu">
+        <ul class="rayival_nav_list">
+          <li><a href="index.html" class="rayival_nav_link rayival_active">Beranda</a></li>
+          <li><a href="tentang.html" class="rayival_nav_link">Tentang</a></li>
+          <li><a href="layanan.html" class="rayival_nav_link">Layanan</a></li>
+          <li><a href="jadwal-tarif.html" class="rayival_nav_link">Jadwal & Tarif</a></li>
+          <li><a href="pemesanan.html" class="rayival_nav_link">Ferizy</a></li>
+          <li><a href="berita.html" class="rayival_nav_link">Berita</a></li>
+          <li><a href="galeri.html" class="rayival_nav_link">Galeri</a></li>
+          <li><a href="kontak.html" class="rayival_nav_link">Kontak</a></li>
+        </ul>
+      </nav>
+      <button id="rayival_mobile_toggle" aria-label="Buka Navigasi">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="rayival_page_banner">
+    <div class="rayival_container">
+      <h1>Jadwal Keberangkatan & Simulasi Tarif</h1>
+      <p class="rayival_breadcrumb"><a href="index.html">Beranda</a> / Jadwal & Tarif</p>
+    </div>
+  </section>
+
+  <section class="rayival_section">
+    <div class="rayival_container">
+      <!-- SEARCH BAR JADWAL -->
+      <div class="rayival_card" style="margin-bottom:32px;">
+        <label class="rayival_label" for="rayival_search_jadwal">Cari Pelabuhan, Rute, atau Nama Kapal:</label>
+        <input type="text" id="rayival_search_jadwal" class="rayival_input" placeholder="Ketik contoh: Merak, Ketapang, Express, atau Portlink..." />
+      </div>
+
+      <!-- TABEL JADWAL -->
+      <div class="rayival_table_wrap" style="margin-bottom:60px;">
+        <table class="rayival_table">
+          <thead>
+            <tr>
+              <th>Lintasan</th>
+              <th>Dermaga</th>
+              <th>Jam Operasional</th>
+              <th>Interval Keberangkatan</th>
+              <th>Estimasi Durasi</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="rayival_tbody_jadwal">
+            <tr>
+              <td><strong>Merak → Bakauheni</strong></td>
+              <td>Dermaga VI (Express)</td>
+              <td>00:00 – 23:59 WIB</td>
+              <td>Setiap 60 Menit</td>
+              <td>± 60 Menit</td>
+              <td><span class="rayival_status_pill rayival_status_express">Express</span></td>
+            </tr>
+            <tr>
+              <td><strong>Merak → Bakauheni</strong></td>
+              <td>Dermaga I – V (Reguler)</td>
+              <td>00:00 – 23:59 WIB</td>
+              <td>Setiap 30 Menit</td>
+              <td>± 120 Menit</td>
+              <td><span class="rayival_status_pill rayival_status_ready">Normal</span></td>
+            </tr>
+            <tr>
+              <td><strong>Ketapang → Gilimanuk</strong></td>
+              <td>Dermaga MB I – IV</td>
+              <td>00:00 – 23:59 WIB</td>
+              <td>Setiap 15 Menit</td>
+              <td>± 45 Menit</td>
+              <td><span class="rayival_status_pill rayival_status_ready">Normal</span></td>
+            </tr>
+            <tr>
+              <td><strong>Padangbai → Lembar</strong></td>
+              <td>Dermaga I & II</td>
+              <td>00:00 – 23:59 WITA</td>
+              <td>Setiap 90 Menit</td>
+              <td>± 4 Jam</td>
+              <td><span class="rayival_status_pill rayival_status_ready">Normal</span></td>
+            </tr>
+            <tr>
+              <td><strong>Kayangan → Pototano</strong></td>
+              <td>Dermaga I & II</td>
+              <td>00:00 – 23:59 WITA</td>
+              <td>Setiap 60 Menit</td>
+              <td>± 90 Menit</td>
+              <td><span class="rayival_status_pill rayival_status_ready">Normal</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- KALKULATOR TARIF -->
+      <div class="rayival_widget_card" style="max-width:650px; margin:0 auto;">
+        <h3 class="rayival_widget_title">Kalkulator Tarif Penyeberangan</h3>
+        <div class="rayival_form_group">
+          <label class="rayival_label" for="rayival_pilih_rute">Lintasan</label>
+          <select id="rayival_pilih_rute" class="rayival_select">
+            <option value="merak-bakauheni">Merak ⇄ Bakauheni</option>
+            <option value="ketapang-gilimanuk">Ketapang ⇄ Gilimanuk</option>
+            <option value="padangbai-lembar">Padangbai ⇄ Lembar</option>
+            <option value="kayangan-pototano">Kayangan ⇄ Pototano</option>
+          </select>
+        </div>
+        <div class="rayival_form_group">
+          <label class="rayival_label" for="rayival_pilih_golongan">Golongan</label>
+          <select id="rayival_pilih_golongan" class="rayival_select">
+            <option value="kaki">Pejalan Kaki</option>
+            <option value="motor">Golongan II (Motor)</option>
+            <option value="mobil">Golongan IVA (Mobil Pribadi)</option>
+            <option value="truk">Golongan VIB (Truk Sedang)</option>
+          </select>
+        </div>
+        <div class="rayival_form_group">
+          <label class="rayival_label" for="rayival_pilih_layanan">Layanan</label>
+          <select id="rayival_pilih_layanan" class="rayival_select">
+            <option value="reguler">Reguler</option>
+            <option value="express">Express</option>
+          </select>
+        </div>
+        <button id="rayival_btn_hitung_tarif" class="rayival_btn rayival_btn_ocean" style="width:100%;">Hitung Biaya Tiket</button>
+        <div id="rayival_hasil_tarif" class="rayival_result_box">Hasil perhitungan akan tampil di sini.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="rayival_footer">
+    <div class="rayival_container">
+      <div class="rayival_footer_bottom" style="padding-top:0;">
+        <span>&copy; 2026 PT ASDP Indonesia Ferry (Persero). Redesign Project by Rayival.</span>
+        <span>Call Center: 021191</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

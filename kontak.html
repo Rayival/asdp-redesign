@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hubungi Kami - PT ASDP Indonesia Ferry</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header id="rayival_header">
+    <div class="rayival_container rayival_nav_wrapper">
+      <a href="index.html" class="rayival_logo">
+        <img src="assets/logo.png" alt="Logo PT ASDP Indonesia Ferry" class="rayival_logo_img" />
+      </a>
+      <nav id="rayival_nav_menu">
+        <ul class="rayival_nav_list">
+          <li><a href="index.html" class="rayival_nav_link rayival_active">Beranda</a></li>
+          <li><a href="tentang.html" class="rayival_nav_link">Tentang</a></li>
+          <li><a href="layanan.html" class="rayival_nav_link">Layanan</a></li>
+          <li><a href="jadwal-tarif.html" class="rayival_nav_link">Jadwal & Tarif</a></li>
+          <li><a href="pemesanan.html" class="rayival_nav_link">Ferizy</a></li>
+          <li><a href="berita.html" class="rayival_nav_link">Berita</a></li>
+          <li><a href="galeri.html" class="rayival_nav_link">Galeri</a></li>
+          <li><a href="kontak.html" class="rayival_nav_link">Kontak</a></li>
+        </ul>
+      </nav>
+      <button id="rayival_mobile_toggle" aria-label="Buka Navigasi">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="rayival_page_banner">
+    <div class="rayival_container">
+      <h1>Hubungi Layanan Pelanggan</h1>
+      <p class="rayival_breadcrumb"><a href="index.html">Beranda</a> / Kontak</p>
+    </div>
+  </section>
+
+  <section class="rayival_section">
+    <div class="rayival_container rayival_grid_2">
+      <!-- INFO KANTOR -->
+      <div>
+        <span class="rayival_badge">Layanan 24 Jam</span>
+        <h2 class="rayival_title">Kami Siap Membantu Perjalanan Anda</h2>
+        <p style="margin-bottom:24px;">Sampaikan pertanyaan, saran, maupun laporan kendala tiket Ferizy dan layanan pelabuhan melalui saluran resmi berikut atau formulir di samping.</p>
+
+        <div class="rayival_card" style="margin-bottom:18px;">
+          <h4>📍 Kantor Pusat PT ASDP Indonesia Ferry</h4>
+          <p class="rayival_subtitle" style="font-size:0.92rem;">Jl. Jend. Ahmad Yani Kav. 52 A, Cempaka Putih Timur, Jakarta Pusat 10510</p>
+        </div>
+
+        <div class="rayival_card" style="margin-bottom:18px;">
+          <h4>📞 Contact Center & WhatsApp Resmi</h4>
+          <p class="rayival_subtitle" style="font-size:0.92rem;">Telepon: <strong>021191</strong> | WhatsApp: <strong>0811-1021-191</strong> | Email: <strong>cs@asdp.id</strong></p>
+        </div>
+      </div>
+
+      <!-- FORM INPUT KIRIM PESAN -->
+      <div class="rayival_widget_card">
+        <h3 class="rayival_widget_title">Kirim Pesan kepada ASDP</h3>
+        <p class="rayival_subtitle" style="font-size:0.9rem; margin-bottom:20px;">Isi data lengkap agar tim kami dapat segera menindaklanjuti pesan Anda.</p>
+
+        <form id="rayival_form_kontak">
+          <div class="rayival_form_group">
+            <label class="rayival_label" for="rayival_kontak_nama">Nama Lengkap</label>
+            <input type="text" id="rayival_kontak_nama" class="rayival_input" placeholder="Masukkan nama lengkap Anda" required />
+          </div>
+
+          <div class="rayival_form_group">
+            <label class="rayival_label" for="rayival_kontak_email">Alamat Email</label>
+            <input type="email" id="rayival_kontak_email" class="rayival_input" placeholder="nama@email.com" required />
+          </div>
+
+          <div class="rayival_form_group">
+            <label class="rayival_label" for="rayival_kontak_subjek">Kategori Pesan</label>
+            <select id="rayival_kontak_subjek" class="rayival_select">
+              <option value="Informasi Jadwal & Tarif">Informasi Jadwal & Tarif</option>
+              <option value="Kendala Tiket Ferizy / Refund">Kendala Tiket Ferizy / Refund</option>
+              <option value="Saran & Apresiasi Layanan">Saran & Apresiasi Layanan</option>
+              <option value="Kerja Sama Korporasi & Logistik">Kerja Sama Korporasi & Logistik</option>
+            </select>
+          </div>
+
+          <div class="rayival_form_group">
+            <label class="rayival_label" for="rayival_kontak_pesan">Isi Pesan</label>
+            <textarea id="rayival_kontak_pesan" rows="4" class="rayival_textarea" placeholder="Tuliskan detail pertanyaan atau pesan Anda di sini..." required></textarea>
+          </div>
+
+          <button type="submit" class="rayival_btn rayival_btn_primary" style="width:100%;">Kirim Pesan Sekarang</button>
+        </form>
+
+        <div id="rayival_kontak_alert" class="rayival_alert_success"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="rayival_footer">
+    <div class="rayival_container">
+      <div class="rayival_footer_bottom" style="padding-top:0;">
+        <span>&copy; 2026 PT ASDP Indonesia Ferry (Persero). Redesign Project by Rayival.</span>
+        <span>Call Center: 021191</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

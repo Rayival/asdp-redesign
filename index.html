@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT ASDP Indonesia Ferry (Persero) - Redesign by Rayival</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header id="rayival_header">
+    <div class="rayival_container rayival_nav_wrapper">
+      <a href="index.html" class="rayival_logo">
+        <img src="assets/logo.png" alt="Logo PT ASDP Indonesia Ferry" class="rayival_logo_img" />
+      </a>
+      <nav id="rayival_nav_menu">
+        <ul class="rayival_nav_list">
+          <li><a href="index.html" class="rayival_nav_link rayival_active">Beranda</a></li>
+          <li><a href="tentang.html" class="rayival_nav_link">Tentang</a></li>
+          <li><a href="layanan.html" class="rayival_nav_link">Layanan</a></li>
+          <li><a href="jadwal-tarif.html" class="rayival_nav_link">Jadwal & Tarif</a></li>
+          <li><a href="pemesanan.html" class="rayival_nav_link">Ferizy</a></li>
+          <li><a href="berita.html" class="rayival_nav_link">Berita</a></li>
+          <li><a href="galeri.html" class="rayival_nav_link">Galeri</a></li>
+          <li><a href="kontak.html" class="rayival_nav_link">Kontak</a></li>
+        </ul>
+      </nav>
+      <button id="rayival_mobile_toggle" aria-label="Buka Navigasi">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- HERO FULLSCREEN SLIDESHOW -->
+  <section id="rayival_hero">
+    <div class="rayival_hero_slides">
+      <div class="rayival_hero_slide rayival_slide_active" style="background-image: url('assets/home1.png');"></div>
+      <div class="rayival_hero_slide" style="background-image: url('assets/home2.jpeg');"></div>
+      <div class="rayival_hero_slide" style="background-image: url('assets/home3.png');"></div>
+      <div class="rayival_hero_slide" style="background-image: url('assets/home4.jpeg');"></div>
+      <div class="rayival_hero_slide" style="background-image: url('assets/home5.jpg');"></div>
+    </div>
+    <div class="rayival_hero_overlay"></div>
+
+    <div class="rayival_container">
+      <div class="rayival_hero_inner">
+        <span class="rayival_hero_kicker">BUMN Jasa Penyeberangan & Kepelabuhanan</span>
+        <h1 class="rayival_hero_title">Konektivitas Maritim Terintegrasi di Seluruh Nusantara</h1>
+        <p class="rayival_hero_desc">
+          Menghubungkan pulau-pulau Indonesia melalui armada kapal ferry yang andal, pengelolaan pelabuhan modern, serta sistem pemesanan tiket digital Ferizy.
+        </p>
+        <div class="rayival_btn_group">
+          <a href="pemesanan.html" class="rayival_btn rayival_btn_primary">Pesan Tiket Ferizy</a>
+          <a href="jadwal-tarif.html" class="rayival_btn rayival_btn_glass">Jadwal & Tarif</a>
+        </div>
+
+        <div class="rayival_slide_dots" aria-label="Navigasi Slide">
+          <button class="rayival_slide_dot rayival_dot_active" data-slide="0" aria-label="Slide 1"></button>
+          <button class="rayival_slide_dot" data-slide="1" aria-label="Slide 2"></button>
+          <button class="rayival_slide_dot" data-slide="2" aria-label="Slide 3"></button>
+          <button class="rayival_slide_dot" data-slide="3" aria-label="Slide 4"></button>
+          <button class="rayival_slide_dot" data-slide="4" aria-label="Slide 5"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING SIMULASI TARIF HORIZONTAL -->
+  <div class="rayival_container rayival_floating_wrap">
+    <div class="rayival_floating_card">
+      <div class="rayival_bar_top">
+        <h2 class="rayival_bar_title">Simulasi Cepat Tarif Penyeberangan</h2>
+        <span class="rayival_subtitle" style="font-size:0.84rem;">Cek estimasi biaya tiket sebelum berangkat</span>
+      </div>
+
+      <div class="rayival_bar_grid">
+        <div>
+          <label class="rayival_label" for="rayival_pilih_rute">Lintasan Pelabuhan</label>
+          <select id="rayival_pilih_rute" class="rayival_select">
+            <option value="merak-bakauheni">Merak (Banten) - Bakauheni (Lampung)</option>
+            <option value="ketapang-gilimanuk">Ketapang (Jawa) - Gilimanuk (Bali)</option>
+            <option value="padangbai-lembar">Padangbai (Bali) - Lembar (Lombok)</option>
+            <option value="kayangan-pototano">Kayangan (Lombok) - Pototano (Sumbawa)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="rayival_label" for="rayival_pilih_golongan">Golongan Kendaraan / Penumpang</label>
+          <select id="rayival_pilih_golongan" class="rayival_select">
+            <option value="kaki">Pejalan Kaki (Dewasa)</option>
+            <option value="motor">Golongan II - Sepeda Motor (&lt;500cc)</option>
+            <option value="mobil">Golongan IVA - Mobil Penumpang</option>
+            <option value="truk">Golongan VIB - Truk Barang Sedang</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="rayival_label" for="rayival_pilih_layanan">Kelas Dermaga</label>
+          <select id="rayival_pilih_layanan" class="rayival_select">
+            <option value="reguler">Dermaga Reguler</option>
+            <option value="express">Dermaga Express</option>
+          </select>
+        </div>
+
+        <button id="rayival_btn_hitung_tarif" class="rayival_btn rayival_btn_primary">Hitung Tarif</button>
+      </div>
+
+      <div id="rayival_hasil_tarif" class="rayival_result_box">
+        Pilih lintasan dan golongan kendaraan di atas untuk melihat estimasi tarif.
+      </div>
+    </div>
+  </div>
+
+  <!-- STATISTIK -->
+  <section class="rayival_section" style="padding-top: 12px; padding-bottom: 24px;">
+    <div class="rayival_container">
+      <div class="rayival_grid_4">
+        <div class="rayival_stat_card">
+          <div class="rayival_stat_num">220+</div>
+          <div class="rayival_stat_label">Armada Kapal Ferry</div>
+        </div>
+        <div class="rayival_stat_card">
+          <div class="rayival_stat_num">37</div>
+          <div class="rayival_stat_label">Pelabuhan Dikelola</div>
+        </div>
+        <div class="rayival_stat_card">
+          <div class="rayival_stat_num">300+</div>
+          <div class="rayival_stat_label">Lintasan Penyeberangan</div>
+        </div>
+        <div class="rayival_stat_card">
+          <div class="rayival_stat_num">27</div>
+          <div class="rayival_stat_label">Kantor Cabang Nusantara</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINTASAN POPULER -->
+  <section class="rayival_section">
+    <div class="rayival_container">
+      <div class="rayival_section_header">
+        <span class="rayival_eyebrow">Jaringan Operasional</span>
+        <h2 class="rayival_title">Lintasan Penyeberangan Utama</h2>
+        <p class="rayival_subtitle">Jalur distribusi logistik dan mobilitas penumpang yang beroperasi 24 jam di koridor utama Indonesia.</p>
+      </div>
+
+      <div class="rayival_grid_3">
+        <div class="rayival_card">
+          <img src="assets/home1.png" alt="Merak Bakauheni" class="rayival_card_img" />
+          <div class="rayival_card_body">
+            <span class="rayival_pill rayival_pill_blue">Tersedia Layanan Express</span>
+            <h3 style="margin:12px 0 8px; color:var(--rayival-navy); font-size:1.15rem;">Merak - Bakauheni</h3>
+            <p class="rayival_subtitle" style="font-size:0.9rem; margin-bottom:18px;">Gerbang utama penghubung Pulau Jawa dan Sumatera dengan waktu tempuh 60 menit (Express) hingga 120 menit (Reguler).</p>
+            <a href="jadwal-tarif.html" class="rayival_btn rayival_btn_outline" style="width:100%;">Lihat Jadwal & Tarif</a>
+          </div>
+        </div>
+
+        <div class="rayival_card">
+          <img src="assets/home2.jpeg" alt="Ketapang Gilimanuk" class="rayival_card_img" />
+          <div class="rayival_card_body">
+            <span class="rayival_pill rayival_pill_green">Operasional 24 Jam</span>
+            <h3 style="margin:12px 0 8px; color:var(--rayival-navy); font-size:1.15rem;">Ketapang - Gilimanuk</h3>
+            <p class="rayival_subtitle" style="font-size:0.9rem; margin-bottom:18px;">Akses penyeberangan Jawa Timur menuju Bali dengan frekuensi keberangkatan kapal setiap 15 menit.</p>
+            <a href="jadwal-tarif.html" class="rayival_btn rayival_btn_outline" style="width:100%;">Lihat Jadwal & Tarif</a>
+          </div>
+        </div>
+
+        <div class="rayival_card">
+          <img src="assets/home3.png" alt="Padangbai Lembar" class="rayival_card_img" />
+          <div class="rayival_card_body">
+            <span class="rayival_pill rayival_pill_green">Koridor Bali - NTB</span>
+            <h3 style="margin:12px 0 8px; color:var(--rayival-navy); font-size:1.15rem;">Padangbai - Lembar</h3>
+            <p class="rayival_subtitle" style="font-size:0.9rem; margin-bottom:18px;">Melayani angkutan penumpang dan distribusi logistik antarpulau dari Bali menuju Lombok setiap hari.</p>
+            <a href="jadwal-tarif.html" class="rayival_btn rayival_btn_outline" style="width:100%;">Lihat Jadwal & Tarif</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="rayival_footer">
+    <div class="rayival_container">
+      <div class="rayival_footer_grid">
+        <div>
+          <h4 class="rayival_footer_title">PT ASDP Indonesia Ferry (Persero)</h4>
+          <p style="font-size:0.88rem; line-height:1.7;">BUMN penyedia jasa angkutan penyeberangan dan pengelola pelabuhan terintegrasi terbesar di Indonesia.</p>
+        </div>
+        <div>
+          <h4 class="rayival_footer_title">Navigasi Cepat</h4>
+          <ul class="rayival_footer_links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Perusahaan</a></li>
+            <li><a href="layanan.html">Layanan & Armada</a></li>
+            <li><a href="jadwal-tarif.html">Jadwal & Tarif</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="rayival_footer_title">Informasi Publik</h4>
+          <ul class="rayival_footer_links">
+            <li><a href="pemesanan.html">Panduan Tiket Ferizy</a></li>
+            <li><a href="berita.html">Berita & Pengumuman</a></li>
+            <li><a href="galeri.html">Galeri Fasilitas</a></li>
+            <li><a href="kontak.html">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="rayival_footer_title">Kantor Pusat & Call Center</h4>
+          <p style="font-size:0.88rem;">Jl. Jend. Ahmad Yani Kav. 52 A, Cempaka Putih Timur, Jakarta Pusat 10510</p>
+          <p style="margin-top:10px; color:#FFFFFF; font-weight:700;">Call Center 24 Jam: 021-191</p>
+        </div>
+      </div>
+      <div class="rayival_footer_bottom">
+        <span>&copy; 2026 PT ASDP Indonesia Ferry (Persero). Redesign Project by Rayival.</span>
+        <span>BUMN Untuk Indonesia</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

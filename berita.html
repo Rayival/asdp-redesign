@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berita & Pengumuman - PT ASDP Indonesia Ferry</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header id="rayival_header">
+    <div class="rayival_container rayival_nav_wrapper">
+      <a href="index.html" class="rayival_logo">
+        <img src="assets/logo.png" alt="Logo PT ASDP Indonesia Ferry" class="rayival_logo_img" />
+      </a>
+      <nav id="rayival_nav_menu">
+        <ul class="rayival_nav_list">
+          <li><a href="index.html" class="rayival_nav_link rayival_active">Beranda</a></li>
+          <li><a href="tentang.html" class="rayival_nav_link">Tentang</a></li>
+          <li><a href="layanan.html" class="rayival_nav_link">Layanan</a></li>
+          <li><a href="jadwal-tarif.html" class="rayival_nav_link">Jadwal & Tarif</a></li>
+          <li><a href="pemesanan.html" class="rayival_nav_link">Ferizy</a></li>
+          <li><a href="berita.html" class="rayival_nav_link">Berita</a></li>
+          <li><a href="galeri.html" class="rayival_nav_link">Galeri</a></li>
+          <li><a href="kontak.html" class="rayival_nav_link">Kontak</a></li>
+        </ul>
+      </nav>
+      <button id="rayival_mobile_toggle" aria-label="Buka Navigasi">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="rayival_page_banner">
+    <div class="rayival_container">
+      <h1>Berita & Informasi Operasional</h1>
+      <p class="rayival_breadcrumb"><a href="index.html">Beranda</a> / Berita</p>
+    </div>
+  </section>
+
+  <section class="rayival_section">
+    <div class="rayival_container">
+      <!-- FILTER KATEGORI -->
+      <div class="rayival_filter_bar">
+        <button class="rayival_filter_btn rayival_active_filter" data-filter="all">Semua Berita</button>
+        <button class="rayival_filter_btn" data-filter="operasional">Info Operasional</button>
+        <button class="rayival_filter_btn" data-filter="digital">Transformasi Digital</button>
+        <button class="rayival_filter_btn" data-filter="csr">TJSL & Lingkungan</button>
+      </div>
+
+      <div class="rayival_grid_3">
+        <article class="rayival_card rayival_berita_card" data-category="digital">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Digitalisasi Ferizy" class="rayival_card_img" />
+          <span class="rayival_badge">Transformasi Digital</span>
+          <h3 style="margin-bottom:10px;">ASDP Perluas Penerapan Tiket Online Ferizy di 35 Pelabuhan Nusantara</h3>
+          <p class="rayival_subtitle" style="font-size:0.9rem;">Upaya mempercepat proses boarding dan menghindari antrean panjang di area pelabuhan utama.</p>
+        </article>
+
+        <article class="rayival_card rayival_berita_card" data-category="operasional">
+          <img src="https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2?auto=format&fit=crop&w=800&q=80" alt="Kesiapan Armada" class="rayival_card_img" />
+          <span class="rayival_badge">Info Operasional</span>
+          <h3 style="margin-bottom:10px;">Kesiapan 220 Armada Kapal dan Peningkatan Kapasitas Dermaga Merak–Bakauheni</h3>
+          <p class="rayival_subtitle" style="font-size:0.9rem;">Seluruh armada telah menjalani ramp check keselamatan pelayaran untuk menjamin kelancaran arus logistik.</p>
+        </article>
+
+        <article class="rayival_card rayival_berita_card" data-category="csr">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Program Pesisir" class="rayival_card_img" />
+          <span class="rayival_badge">TJSL & Lingkungan</span>
+          <h3 style="margin-bottom:10px;">Program Konservasi Terumbu Karang dan Bersih Pantai di Kawasan Pelabuhan</h3>
+          <p class="rayival_subtitle" style="font-size:0.9rem;">Komitmen keberlanjutan lingkungan maritim ASDP bersama masyarakat pesisir.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer id="rayival_footer">
+    <div class="rayival_container">
+      <div class="rayival_footer_bottom" style="padding-top:0;">
+        <span>&copy; 2026 PT ASDP Indonesia Ferry (Persero). Redesign Project by Rayival.</span>
+        <span>Call Center: 021191</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
