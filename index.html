@@ -8,28 +8,10 @@
 </head>
 <body>
 
-  <header id="rayival_header">
-    <div class="rayival_container rayival_nav_wrapper">
-      <a href="index.html" class="rayival_logo">
-        <img src="assets/logo.png" alt="Logo PT ASDP Indonesia Ferry" class="rayival_logo_img" />
-      </a>
-      <nav id="rayival_nav_menu">
-        <ul class="rayival_nav_list">
-          <li><a href="index.html" class="rayival_nav_link rayival_active">Beranda</a></li>
-          <li><a href="tentang.html" class="rayival_nav_link">Tentang</a></li>
-          <li><a href="layanan.html" class="rayival_nav_link">Layanan</a></li>
-          <li><a href="jadwal-tarif.html" class="rayival_nav_link">Jadwal & Tarif</a></li>
-          <li><a href="pemesanan.html" class="rayival_nav_link">Ferizy</a></li>
-          <li><a href="berita.html" class="rayival_nav_link">Berita</a></li>
-          <li><a href="galeri.html" class="rayival_nav_link">Galeri</a></li>
-          <li><a href="kontak.html" class="rayival_nav_link">Kontak</a></li>
-        </ul>
-      </nav>
-      <button id="rayival_mobile_toggle" aria-label="Buka Navigasi">&#9776;</button>
-    </div>
-  </header>
+  <!-- HEADER -->
+  <div id="rayival_header_placeholder"></div>
 
-  <!-- HERO FULLSCREEN SLIDESHOW -->
+  <!-- SLIDESHOW -->
   <section id="rayival_hero">
     <div class="rayival_hero_slides">
       <div class="rayival_hero_slide rayival_slide_active" style="background-image: url('assets/home1.png');"></div>
@@ -133,6 +115,34 @@
     </div>
   </section>
 
+  <!-- SEKILAS TENTANG KAMI -->
+  <section class="rayival_section_alt">
+    <div class="rayival_container rayival_grid_2" style="align-items: center;">
+      <div>
+        <span class="rayival_eyebrow">SEKILAS TENTANG KAMI</span>
+        <h2 class="rayival_title">Sekilas Tentang Kami</h2>
+        <p style="color: var(--rayival-muted); margin-bottom: 16px; line-height: 1.75;">
+          <strong>PT ASDP Indonesia Ferry (Persero)</strong> atau ASDP adalah BUMN yang bergerak dalam bisnis jasa penyeberangan dan pelabuhan terintegrasi dan tujuan wisata <em>waterfront</em>.
+        </p>
+        <p style="color: var(--rayival-muted); margin-bottom: 28px; line-height: 1.75;">
+          ASDP menjalankan armada ferry sebanyak lebih dari 160 unit yang menangani lebih dari 300 rute di 36 pelabuhan di seluruh Indonesia dan mengembangkan bisnis lainnya terkait dengan pengembangan kawasan pelabuhan, seperti <strong>Bakauheni Harbour City</strong> di Provinsi Lampung dan <strong>Kawasan Marina Labuan Bajo</strong> di Nusa Tenggara Timur.
+        </p>
+        <div class="rayival_btn_group">
+          <a href="tentang.html" class="rayival_btn rayival_btn_primary">Profil Kami</a>
+          <a href="layanan.html" class="rayival_btn rayival_btn_outline">Profil ASDP &amp; Layanan</a>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="assets/home4.jpeg"
+          alt="Profil PT ASDP Indonesia Ferry (Persero)"
+          style="width: 100%; height: 360px; object-fit: cover; border-radius: var(--rayival-radius); box-shadow: var(--rayival-shadow); display: block;"
+        />
+      </div>
+    </div>
+  </section>
+
   <!-- LINTASAN POPULER -->
   <section class="rayival_section">
     <div class="rayival_container">
@@ -177,43 +187,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer id="rayival_footer">
-    <div class="rayival_container">
-      <div class="rayival_footer_grid">
-        <div>
-          <h4 class="rayival_footer_title">PT ASDP Indonesia Ferry (Persero)</h4>
-          <p style="font-size:0.88rem; line-height:1.7;">BUMN penyedia jasa angkutan penyeberangan dan pengelola pelabuhan terintegrasi terbesar di Indonesia.</p>
-        </div>
-        <div>
-          <h4 class="rayival_footer_title">Navigasi Cepat</h4>
-          <ul class="rayival_footer_links">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="tentang.html">Tentang Perusahaan</a></li>
-            <li><a href="layanan.html">Layanan & Armada</a></li>
-            <li><a href="jadwal-tarif.html">Jadwal & Tarif</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="rayival_footer_title">Informasi Publik</h4>
-          <ul class="rayival_footer_links">
-            <li><a href="pemesanan.html">Panduan Tiket Ferizy</a></li>
-            <li><a href="berita.html">Berita & Pengumuman</a></li>
-            <li><a href="galeri.html">Galeri Fasilitas</a></li>
-            <li><a href="kontak.html">Hubungi Kami</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="rayival_footer_title">Kantor Pusat & Call Center</h4>
-          <p style="font-size:0.88rem;">Jl. Jend. Ahmad Yani Kav. 52 A, Cempaka Putih Timur, Jakarta Pusat 10510</p>
-          <p style="margin-top:10px; color:#FFFFFF; font-weight:700;">Call Center 24 Jam: 021-191</p>
-        </div>
-      </div>
-      <div class="rayival_footer_bottom">
-        <span>&copy; 2026 PT ASDP Indonesia Ferry (Persero). Redesign Project by Rayival.</span>
-        <span>BUMN Untuk Indonesia</span>
-      </div>
-    </div>
-  </footer>
+  <div id="rayival_footer_placeholder"></div>
 
   <script src="js/script.js"></script>
 </body>

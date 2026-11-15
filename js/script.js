@@ -1,16 +1,82 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const rayivalCurrentPage = window.location.pathname.split("/").pop() || "index.html";
-  const rayivalNavLinks = document.querySelectorAll(".rayival_nav_link");
+  const rayivalHeaderPlaceholder = document.getElementById("rayival_header_placeholder");
+  const rayivalFooterPlaceholder = document.getElementById("rayival_footer_placeholder");
 
-  rayivalNavLinks.forEach((link) => {
-    link.classList.remove("rayival_active");
-    const linkHref = link.getAttribute("href");
-    if (linkHref === rayivalCurrentPage) {
+  if (rayivalHeaderPlaceholder) {
+    rayivalHeaderPlaceholder.outerHTML = `
+      <header id="rayival_header">
+        <div class="rayival_container rayival_nav_wrapper">
+          <a href="index.html" class="rayival_logo">
+            <img src="assets/logo.png" alt="Logo PT ASDP Indonesia Ferry" class="rayival_logo_img" />
+          </a>
+          <nav id="rayival_nav_menu">
+            <ul class="rayival_nav_list">
+              <li><a href="index.html" class="rayival_nav_link">Beranda</a></li>
+              <li><a href="tentang.html" class="rayival_nav_link">Tentang</a></li>
+              <li><a href="layanan.html" class="rayival_nav_link">Layanan</a></li>
+              <li><a href="jadwal-tarif.html" class="rayival_nav_link">Jadwal & Tarif</a></li>
+              <li><a href="pemesanan.html" class="rayival_nav_link">Ferizy</a></li>
+              <li><a href="berita.html" class="rayival_nav_link">Berita</a></li>
+              <li><a href="galeri.html" class="rayival_nav_link">Galeri</a></li>
+              <li><a href="kontak.html" class="rayival_nav_link">Kontak</a></li>
+            </ul>
+          </nav>
+          <button id="rayival_mobile_toggle" aria-label="Buka Navigasi">&#9776;</button>
+        </div>
+      </header>
+    `;
+  }
+
+  if (rayivalFooterPlaceholder) {
+    rayivalFooterPlaceholder.outerHTML = `
+      <footer id="rayival_footer">
+        <div class="rayival_container">
+          <div class="rayival_footer_grid">
+            <div>
+              <h4 class="rayival_footer_title">PT ASDP Indonesia Ferry (Persero)</h4>
+              <p style="font-size: 0.88rem; line-height: 1.7;">BUMN penyedia jasa angkutan penyeberangan dan pengelola pelabuhan terintegrasi terbesar di Indonesia.</p>
+            </div>
+            <div>
+              <h4 class="rayival_footer_title">Navigasi Cepat</h4>
+              <ul class="rayival_footer_links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Perusahaan</a></li>
+                <li><a href="layanan.html">Layanan & Armada</a></li>
+                <li><a href="jadwal-tarif.html">Jadwal & Tarif</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="rayival_footer_title">Informasi Publik</h4>
+              <ul class="rayival_footer_links">
+                <li><a href="pemesanan.html">Panduan Tiket Ferizy</a></li>
+                <li><a href="berita.html">Berita & Pengumuman</a></li>
+                <li><a href="galeri.html">Galeri Fasilitas</a></li>
+                <li><a href="kontak.html">Hubungi Kami</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="rayival_footer_title">Kantor Pusat & Call Center</h4>
+              <p style="font-size: 0.88rem;">Jl. Jend. Ahmad Yani Kav. 52 A, Cempaka Putih Timur, Jakarta Pusat 10510</p>
+              <p style="margin-top: 10px; color: #FFFFFF; font-weight: 700;">Call Center 24 Jam: 021-191</p>
+            </div>
+          </div>
+          <div class="rayival_footer_bottom">
+            <span>&copy; 2026 PT ASDP Indonesia Ferry (Persero).</span>
+            <span>UTS Pemrograman Web - Rayival Dede Saputra (2503010032)</span>
+          </div>
+        </div>
+      </footer>
+    `;
+  }
+
+  const rayivalCurrentPage = window.location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll(".rayival_nav_link").forEach((link) => {
+    if (link.getAttribute("href") === rayivalCurrentPage) {
       link.classList.add("rayival_active");
     }
   });
-  
+
   const rayivalHeader = document.getElementById("rayival_header");
   if (rayivalHeader) {
     window.addEventListener("scroll", () => {
