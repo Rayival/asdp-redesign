@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jadwal & Tarif - PT ASDP Indonesia Ferry</title>
+  <title>Jadwal &amp; Tarif - PT ASDP Indonesia Ferry (Persero)</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -11,109 +11,218 @@
   <!-- HEADER -->
   <div id="rayival_header_placeholder"></div>
 
+  <!-- BANNER -->
   <section class="rayival_page_banner">
     <div class="rayival_container">
-      <h1>Jadwal Keberangkatan & Simulasi Tarif</h1>
-      <p class="rayival_breadcrumb"><a href="index.html">Beranda</a> / Jadwal & Tarif</p>
+      <h1>Jadwal Keberangkatan &amp; Simulasi Tarif</h1>
+      <p class="rayival_breadcrumb"><a href="index.html">Beranda</a> / Jadwal &amp; Tarif</p>
     </div>
   </section>
 
+  <!-- PENCARIAN & TABEL JADWAL LINTASAN -->
   <section class="rayival_section">
     <div class="rayival_container">
-      <!-- SEARCH BAR JADWAL -->
-      <div class="rayival_card" style="margin-bottom:32px;">
-        <label class="rayival_label" for="rayival_search_jadwal">Cari Pelabuhan, Rute, atau Nama Kapal:</label>
-        <input type="text" id="rayival_search_jadwal" class="rayival_input" placeholder="Ketik contoh: Merak, Ketapang, Express, atau Portlink..." />
+      <div class="rayival_section_header">
+        <span class="rayival_eyebrow">Informasi Operasional</span>
+        <h2 class="rayival_title">Jadwal Lintasan Penyeberangan Utama</h2>
+        <p class="rayival_subtitle">Gunakan kolom pencarian di bawah ini untuk memfilter pelabuhan asal, tujuan, dermaga, atau jenis layanan secara langsung.</p>
       </div>
 
-      <!-- TABEL JADWAL -->
-      <div class="rayival_table_wrap" style="margin-bottom:60px;">
+      <!-- SEARCH BAR JADWAL -->
+      <div class="rayival_card" style="margin-bottom: 28px;">
+        <div class="rayival_card_body">
+          <label class="rayival_label" for="rayival_search_jadwal">Cari Pelabuhan, Lintasan, atau Kelas Layanan</label>
+          <input type="text" id="rayival_search_jadwal" class="rayival_input" placeholder="Ketik contoh: Merak, Ketapang, Express, Ajibata, atau Padangbai..." />
+        </div>
+      </div>
+
+      <!-- TABEL JADWAL OPERASIONAL ASDP -->
+      <div class="rayival_table_wrap">
         <table class="rayival_table">
           <thead>
             <tr>
-              <th>Lintasan</th>
+              <th>Lintasan Pelabuhan</th>
               <th>Dermaga</th>
               <th>Jam Operasional</th>
               <th>Interval Keberangkatan</th>
               <th>Estimasi Durasi</th>
-              <th>Status</th>
+              <th>Layanan</th>
             </tr>
           </thead>
           <tbody id="rayival_tbody_jadwal">
             <tr>
-              <td><strong>Merak → Bakauheni</strong></td>
-              <td>Dermaga VI (Express)</td>
-              <td>00:00 – 23:59 WIB</td>
+              <td><strong>Merak (Banten) - Bakauheni (Lampung)</strong></td>
+              <td>Dermaga VI Eksekutif (Sosoro)</td>
+              <td>00:00 - 23:59 WIB</td>
               <td>Setiap 60 Menit</td>
-              <td>± 60 Menit</td>
-              <td><span class="rayival_status_pill rayival_status_express">Express</span></td>
+              <td>60 - 75 Menit</td>
+              <td><span class="rayival_pill rayival_pill_blue">Express</span></td>
             </tr>
             <tr>
-              <td><strong>Merak → Bakauheni</strong></td>
-              <td>Dermaga I – V (Reguler)</td>
-              <td>00:00 – 23:59 WIB</td>
+              <td><strong>Merak (Banten) - Bakauheni (Lampung)</strong></td>
+              <td>Dermaga I - V &amp; VII</td>
+              <td>00:00 - 23:59 WIB</td>
               <td>Setiap 30 Menit</td>
-              <td>± 120 Menit</td>
-              <td><span class="rayival_status_pill rayival_status_ready">Normal</span></td>
+              <td>120 Menit</td>
+              <td><span class="rayival_pill rayival_pill_green">Reguler</span></td>
             </tr>
             <tr>
-              <td><strong>Ketapang → Gilimanuk</strong></td>
-              <td>Dermaga MB I – IV</td>
-              <td>00:00 – 23:59 WIB</td>
+              <td><strong>Ketapang (Jawa Timur) - Gilimanuk (Bali)</strong></td>
+              <td>Dermaga MB I - IV &amp; LCM</td>
+              <td>00:00 - 23:59 WIB / WITA</td>
               <td>Setiap 15 Menit</td>
-              <td>± 45 Menit</td>
-              <td><span class="rayival_status_pill rayival_status_ready">Normal</span></td>
+              <td>45 - 60 Menit</td>
+              <td><span class="rayival_pill rayival_pill_green">Reguler</span></td>
             </tr>
             <tr>
-              <td><strong>Padangbai → Lembar</strong></td>
-              <td>Dermaga I & II</td>
-              <td>00:00 – 23:59 WITA</td>
+              <td><strong>Padangbai (Bali) - Lembar (Lombok)</strong></td>
+              <td>Dermaga I &amp; II</td>
+              <td>00:00 - 23:59 WITA</td>
               <td>Setiap 90 Menit</td>
-              <td>± 4 Jam</td>
-              <td><span class="rayival_status_pill rayival_status_ready">Normal</span></td>
+              <td>4 - 5 Jam</td>
+              <td><span class="rayival_pill rayival_pill_green">Reguler</span></td>
             </tr>
             <tr>
-              <td><strong>Kayangan → Pototano</strong></td>
-              <td>Dermaga I & II</td>
-              <td>00:00 – 23:59 WITA</td>
+              <td><strong>Kayangan (Lombok) - Pototano (Sumbawa)</strong></td>
+              <td>Dermaga I &amp; II</td>
+              <td>00:00 - 23:59 WITA</td>
               <td>Setiap 60 Menit</td>
-              <td>± 90 Menit</td>
-              <td><span class="rayival_status_pill rayival_status_ready">Normal</span></td>
+              <td>90 - 120 Menit</td>
+              <td><span class="rayival_pill rayival_pill_green">Reguler</span></td>
+            </tr>
+            <tr>
+              <td><strong>Ajibata (Parapat) - Ambarita (Samosir)</strong></td>
+              <td>Dermaga Ajibata</td>
+              <td>07:30 - 19:30 WIB</td>
+              <td>Setiap 90 Menit</td>
+              <td>45 Menit</td>
+              <td><span class="rayival_pill rayival_pill_green">Reguler</span></td>
+            </tr>
+            <tr>
+              <td><strong>Tanjung Kalian (Bangka) - Tanjung Api-Api (Sumsel)</strong></td>
+              <td>Dermaga Pelabuhan</td>
+              <td>05:00 - 21:00 WIB</td>
+              <td>Setiap 120 Menit</td>
+              <td>4 Jam</td>
+              <td><span class="rayival_pill rayival_pill_green">Reguler</span></td>
+            </tr>
+            <tr>
+              <td><strong>Hunimua (Liang) - Waipirit (Seram)</strong></td>
+              <td>Dermaga I &amp; II</td>
+              <td>06:00 - 20:00 WIT</td>
+              <td>Setiap 60 Menit</td>
+              <td>45 Menit</td>
+              <td><span class="rayival_pill rayival_pill_green">Reguler</span></td>
             </tr>
           </tbody>
         </table>
       </div>
+    </div>
+  </section>
 
-      <!-- KALKULATOR TARIF -->
-      <div class="rayival_widget_card" style="max-width:650px; margin:0 auto;">
-        <h3 class="rayival_widget_title">Kalkulator Tarif Penyeberangan</h3>
-        <div class="rayival_form_group">
-          <label class="rayival_label" for="rayival_pilih_rute">Lintasan</label>
-          <select id="rayival_pilih_rute" class="rayival_select">
-            <option value="merak-bakauheni">Merak ⇄ Bakauheni</option>
-            <option value="ketapang-gilimanuk">Ketapang ⇄ Gilimanuk</option>
-            <option value="padangbai-lembar">Padangbai ⇄ Lembar</option>
-            <option value="kayangan-pototano">Kayangan ⇄ Pototano</option>
-          </select>
+  <!-- KALKULATOR SIMULASI TARIF -->
+  <section class="rayival_section_alt">
+    <div class="rayival_container">
+      <div class="rayival_grid_2" style="align-items: start;">
+        <!-- FORM -->
+        <div class="rayival_widget_card">
+          <span class="rayival_eyebrow">Estimasi Biaya</span>
+          <h3 class="rayival_widget_title">Kalkulator Tarif Penyeberangan</h3>
+          <p class="rayival_subtitle" style="font-size: 0.9rem; margin-bottom: 20px;">
+            Simulasi tarif penyeberangan terpadu sesuai ketetapan tarif Kementerian Perhubungan dan layanan Ferizy.
+          </p>
+
+          <div class="rayival_form_group">
+            <label class="rayival_label" for="rayival_pilih_rute">Lintasan Pelabuhan</label>
+            <select id="rayival_pilih_rute" class="rayival_select">
+              <option value="merak-bakauheni">Merak (Banten) - Bakauheni (Lampung)</option>
+              <option value="ketapang-gilimanuk">Ketapang (Jawa Timur) - Gilimanuk (Bali)</option>
+              <option value="padangbai-lembar">Padangbai (Bali) - Lembar (Lombok)</option>
+              <option value="kayangan-pototano">Kayangan (Lombok) - Pototano (Sumbawa)</option>
+              <option value="ajibata-ambarita">Ajibata (Parapat) - Ambarita (Samosir)</option>
+              <option value="tanjungkalian-tanjungapiapi">Tanjung Kalian (Bangka) - Tanjung Api-Api (Sumsel)</option>
+              <option value="hunimua-waipirit">Hunimua (Liang) - Waipirit (Seram)</option>
+            </select>
+          </div>
+
+          <div class="rayival_form_group">
+            <label class="rayival_label" for="rayival_pilih_golongan">Golongan Penumpang / Kendaraan</label>
+            <select id="rayival_pilih_golongan" class="rayival_select">
+              <option value="kaki">Penumpang Pejalan Kaki (Dewasa)</option>
+              <option value="motor">Golongan II - Sepeda Motor (&lt; 500cc)</option>
+              <option value="mobil">Golongan IVA - Kendaraan Penumpang (&le; 5m)</option>
+              <option value="truk">Golongan VIB - Truk Barang Sedang (&le; 10m)</option>
+            </select>
+          </div>
+
+          <div class="rayival_form_group">
+            <label class="rayival_label" for="rayival_pilih_layanan">Kelas Layanan Dermaga</label>
+            <select id="rayival_pilih_layanan" class="rayival_select">
+              <option value="reguler">Dermaga Reguler</option>
+              <option value="express">Dermaga Express (Eksekutif)</option>
+            </select>
+          </div>
+
+          <button id="rayival_btn_hitung_tarif" class="rayival_btn rayival_btn_primary" style="width: 100%;">Hitung Estimasi Tarif</button>
+
+          <div id="rayival_hasil_tarif" class="rayival_result_box">
+            Pilih lintasan dan golongan kendaraan lalu klik tombol di atas untuk melihat rincian estimasi biaya.
+          </div>
         </div>
-        <div class="rayival_form_group">
-          <label class="rayival_label" for="rayival_pilih_golongan">Golongan</label>
-          <select id="rayival_pilih_golongan" class="rayival_select">
-            <option value="kaki">Pejalan Kaki</option>
-            <option value="motor">Golongan II (Motor)</option>
-            <option value="mobil">Golongan IVA (Mobil Pribadi)</option>
-            <option value="truk">Golongan VIB (Truk Sedang)</option>
-          </select>
+
+        <!-- TABEL KLASIFIKASI GOLONGAN KENDARAAN ASDP -->
+        <div>
+          <span class="rayival_eyebrow">Ketentuan Resmi</span>
+          <h3 class="rayival_title" style="font-size: 1.55rem;">Penggolongan Kendaraan Penyeberangan</h3>
+          <p class="rayival_subtitle" style="font-size: 0.92rem; margin-bottom: 20px;">
+            Pastikan Anda memilih golongan kendaraan yang sesuai dengan STNK dan dimensi panjang kendaraan saat memesan tiket di Ferizy.
+          </p>
+
+          <div class="rayival_table_wrap">
+            <table class="rayival_table">
+              <thead>
+                <tr>
+                  <th>Golongan</th>
+                  <th>Kategori &amp; Batas Dimensi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Golongan I</strong></td>
+                  <td>Sepeda kayuh</td>
+                </tr>
+                <tr>
+                  <td><strong>Golongan II</strong></td>
+                  <td>Sepeda motor di bawah 500cc dan gerobak dorong</td>
+                </tr>
+                <tr>
+                  <td><strong>Golongan III</strong></td>
+                  <td>Sepeda motor besar (&ge; 500cc) dan kendaraan roda tiga</td>
+                </tr>
+                <tr>
+                  <td><strong>Golongan IVA / IVB</strong></td>
+                  <td>Mobil jeep, sedan, minibus, dan mobil barang (panjang s/d 5 meter)</td>
+                </tr>
+                <tr>
+                  <td><strong>Golongan VA / VB</strong></td>
+                  <td>Bus sedang dan truk barang sedang (panjang s/d 7 meter)</td>
+                </tr>
+                <tr>
+                  <td><strong>Golongan VIA / VIB</strong></td>
+                  <td>Bus besar dan truk tronton sedang (panjang s/d 10 meter)</td>
+                </tr>
+                <tr>
+                  <td><strong>Golongan VII - IX</strong></td>
+                  <td>Truk tronton, alat berat, dan truk trailer (panjang &gt; 10 meter s/d &gt; 16 meter)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="margin-top: 22px;">
+            <a href="pemesanan.html" class="rayival_btn rayival_btn_outline" style="width: 100%;">Lanjut ke Simulasi Pemesanan Ferizy &rarr;</a>
+          </div>
         </div>
-        <div class="rayival_form_group">
-          <label class="rayival_label" for="rayival_pilih_layanan">Layanan</label>
-          <select id="rayival_pilih_layanan" class="rayival_select">
-            <option value="reguler">Reguler</option>
-            <option value="express">Express</option>
-          </select>
-        </div>
-        <button id="rayival_btn_hitung_tarif" class="rayival_btn rayival_btn_ocean" style="width:100%;">Hitung Biaya Tiket</button>
-        <div id="rayival_hasil_tarif" class="rayival_result_box">Hasil perhitungan akan tampil di sini.</div>
       </div>
     </div>
   </section>

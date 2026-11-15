@@ -8,10 +8,9 @@
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- Header -->
   <div id="rayival_header_placeholder"></div>
 
-  <!-- PAGE BANNER -->
   <section class="rayival_page_banner">
     <div class="rayival_container">
       <h1>Pemesanan Tiket Online via Ferizy</h1>
@@ -19,22 +18,24 @@
     </div>
   </section>
 
-  <!-- PANDUAN & SIMULATOR FERIZY -->
   <section class="rayival_section">
     <div class="rayival_container">
       <div class="rayival_section_header">
         <span class="rayival_eyebrow">Alur Reservasi Digital</span>
-        <h2 class="rayival_title">4 Langkah Mudah Pesan Tiket Penyeberangan</h2>
-        <p class="rayival_subtitle">Pemesanan tiket wajib dilakukan secara daring sebelum tiba di area pelabuhan mulai H-60 hingga maksimal 2 jam sebelum jadwal masuk pelabuhan.</p>
+        <h2 class="rayival_title">4 Langkah Pemesanan Tiket Ferizy</h2>
+        <p class="rayival_subtitle">
+          Tiket penyeberangan wajib dipesan secara daring melalui situs ferizy.com, aplikasi Ferizy, atau mitra resmi mulai H-60 hingga maksimal 2 jam sebelum jadwal masuk pelabuhan.
+        </p>
       </div>
 
-      <!-- 4 LANGKAH PEMESANAN -->
       <div class="rayival_grid_4" style="margin-bottom: 64px;">
         <div class="rayival_card">
           <div class="rayival_card_body">
             <span class="rayival_pill rayival_pill_blue">Langkah 01</span>
-            <h3 style="margin: 14px 0 8px; color: var(--rayival-navy); font-size: 1.08rem;">Pilih Jadwal & Pelabuhan</h3>
-            <p class="rayival_subtitle" style="font-size: 0.9rem;">Tentukan pelabuhan asal, tujuan, golongan kendaraan, serta jam masuk pelabuhan.</p>
+            <h3 style="margin: 14px 0 8px; color: var(--rayival-navy); font-size: 1.08rem;">Pilih Jadwal &amp; Pelabuhan</h3>
+            <p class="rayival_subtitle" style="font-size: 0.9rem;">
+              Tentukan pelabuhan asal, tujuan, kelas layanan (Reguler atau Express), golongan kendaraan, serta jam masuk pelabuhan.
+            </p>
           </div>
         </div>
 
@@ -42,15 +43,19 @@
           <div class="rayival_card_body">
             <span class="rayival_pill rayival_pill_blue">Langkah 02</span>
             <h3 style="margin: 14px 0 8px; color: var(--rayival-navy); font-size: 1.08rem;">Isi Data Manifest</h3>
-            <p class="rayival_subtitle" style="font-size: 0.9rem;">Masukkan identitas seluruh penumpang sesuai KTP/SIM serta nomor polisi kendaraan.</p>
+            <p class="rayival_subtitle" style="font-size: 0.9rem;">
+              Lengkapi identitas seluruh penumpang sesuai KTP/SIM/Paspor serta nomor polisi kendaraan sesuai STNK.
+            </p>
           </div>
         </div>
 
         <div class="rayival_card">
           <div class="rayival_card_body">
             <span class="rayival_pill rayival_pill_blue">Langkah 03</span>
-            <h3 style="margin: 14px 0 8px; color: var(--rayival-navy); font-size: 1.08rem;">Pembayaran Digital</h3>
-            <p class="rayival_subtitle" style="font-size: 0.9rem;">Selesaikan pembayaran melalui Virtual Account, QRIS, E-Wallet, atau gerai retail.</p>
+            <h3 style="margin: 14px 0 8px; color: var(--rayival-navy); font-size: 1.08rem;">Pembayaran Non-Tunai</h3>
+            <p class="rayival_subtitle" style="font-size: 0.9rem;">
+              Selesaikan pembayaran melalui Virtual Account bank, QRIS, dompet digital, atau gerai retail mitra (Alfamart, Indomaret, Pos Indonesia).
+            </p>
           </div>
         </div>
 
@@ -58,47 +63,96 @@
           <div class="rayival_card_body">
             <span class="rayival_pill rayival_pill_green">Langkah 04</span>
             <h3 style="margin: 14px 0 8px; color: var(--rayival-navy); font-size: 1.08rem;">Check-In di Pelabuhan</h3>
-            <p class="rayival_subtitle" style="font-size: 0.9rem;">Pindai kode QR E-Ticket pada gerbang masuk pelabuhan sesuai jadwal keberangkatan.</p>
+            <p class="rayival_subtitle" style="font-size: 0.9rem;">
+              Pindai kode QR E-Ticket pada loket atau gerbang masuk pelabuhan sesuai jam keberangkatan yang tertera pada tiket.
+            </p>
           </div>
         </div>
       </div>
 
-      <!-- SIMULATOR BOOKING FERIZY -->
-      <div class="rayival_widget_card" style="max-width: 680px; margin: 0 auto;">
-        <span class="rayival_eyebrow">Uji Coba Sistem</span>
-        <h3 class="rayival_widget_title">Simulator Pembuatan E-Ticket Ferizy</h3>
-        <p class="rayival_subtitle" style="font-size: 0.9rem; margin-bottom: 22px;">Lengkapi formulir di bawah ini untuk membuat simulasi kode booking penyeberangan.</p>
+      <div class="rayival_grid_2" style="align-items: start;">
+        <div class="rayival_widget_card">
+          <span class="rayival_eyebrow">Uji Coba Sistem</span>
+          <h3 class="rayival_widget_title">Simulator Pembuatan E-Ticket Ferizy</h3>
+          <p class="rayival_subtitle" style="font-size: 0.9rem; margin-bottom: 22px;">
+            Isi formulir di bawah ini untuk mencoba simulasi pembuatan kode booking tiket penyeberangan.
+          </p>
 
-        <form id="rayival_form_ferizy">
-          <div class="rayival_form_group">
-            <label class="rayival_label" for="rayival_ferizy_nama">Nama Lengkap Pemesan (Sesuai KTP)</label>
-            <input type="text" id="rayival_ferizy_nama" class="rayival_input" placeholder="Masukkan nama lengkap pemesan" required />
+          <form id="rayival_form_ferizy">
+            <div class="rayival_form_group">
+              <label class="rayival_label" for="rayival_ferizy_nama">Nama Lengkap Pemesan (Sesuai KTP)</label>
+              <input type="text" id="rayival_ferizy_nama" class="rayival_input" placeholder="Masukkan nama lengkap pemesan" required />
+            </div>
+
+            <div class="rayival_form_group">
+              <label class="rayival_label" for="rayival_ferizy_rute">Pilih Lintasan Pelabuhan</label>
+              <select id="rayival_ferizy_rute" class="rayival_select">
+                <option value="Merak - Bakauheni">Merak (Banten) - Bakauheni (Lampung)</option>
+                <option value="Ketapang - Gilimanuk">Ketapang (Jawa Timur) - Gilimanuk (Bali)</option>
+                <option value="Padangbai - Lembar">Padangbai (Bali) - Lembar (Lombok)</option>
+                <option value="Kayangan - Pototano">Kayangan (Lombok) - Pototano (Sumbawa)</option>
+                <option value="Ajibata - Ambarita">Ajibata (Parapat) - Ambarita (Samosir)</option>
+                <option value="Tanjung Kalian - Tanjung Api-Api">Tanjung Kalian (Bangka) - Tanjung Api-Api (Sumsel)</option>
+                <option value="Hunimua - Waipirit">Hunimua (Liang) - Waipirit (Seram)</option>
+              </select>
+            </div>
+
+            <div class="rayival_form_group">
+              <label class="rayival_label" for="rayival_ferizy_tanggal">Tanggal Keberangkatan</label>
+              <input type="date" id="rayival_ferizy_tanggal" class="rayival_input" required />
+            </div>
+
+            <button type="submit" class="rayival_btn rayival_btn_primary" style="width: 100%; margin-top: 6px;">Buat Simulasi E-Ticket</button>
+          </form>
+
+          <div id="rayival_hasil_tiket" class="rayival_alert_success"></div>
+        </div>
+
+        <div>
+          <span class="rayival_eyebrow">Ketentuan Pengguna Jasa</span>
+          <h3 class="rayival_title" style="font-size: 1.55rem;">Aturan Pembelian &amp; Check-In Pelabuhan</h3>
+          <p class="rayival_subtitle" style="font-size: 0.92rem; margin-bottom: 20px;">
+            Untuk menjaga kelancaran lalu lintas di sekitar pelabuhan, ASDP memberlakukan pembatasan zona pembelian tiket dan ketepatan waktu tiba.
+          </p>
+
+          <div class="rayival_table_wrap">
+            <table class="rayival_table">
+              <thead>
+                <tr>
+                  <th>Ketentuan</th>
+                  <th>Rincian Aturan Operasional</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Tidak Ada Penjualan di Pelabuhan</strong></td>
+                  <td>Loket pelabuhan tidak melayani penjualan tiket langsung; pengguna jasa wajib bertiket sebelum masuk area pelabuhan.</td>
+                </tr>
+                <tr>
+                  <td><strong>Pembatasan Radius (Geofencing)</strong></td>
+                  <td>Pembelian tiket melalui aplikasi/web dibatasi dalam radius tertentu dari pelabuhan terluar (Merak 4,24 km, Bakauheni 4,71 km, Ketapang 2,65 km, Gilimanuk 2 km).</td>
+                </tr>
+                <tr>
+                  <td><strong>Masa Berlaku Tiket</strong></td>
+                  <td>Tiket berlaku sesuai tanggal dan rentang jam masuk pelabuhan (<em>check-in</em>) yang dipilih saat pemesanan.</td>
+                </tr>
+                <tr>
+                  <td><strong>Kesesuaian Data Manifest</strong></td>
+                  <td>Jumlah penumpang dan golongan kendaraan wajib sesuai dengan data pada E-Ticket untuk perlindungan asuransi Jasa Raharja.</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-          <div class="rayival_form_group">
-            <label class="rayival_label" for="rayival_ferizy_rute">Pilih Lintasan Pelabuhan</label>
-            <select id="rayival_ferizy_rute" class="rayival_select">
-              <option value="Merak - Bakauheni">Merak (Banten) - Bakauheni (Lampung)</option>
-              <option value="Ketapang - Gilimanuk">Ketapang (Jawa) - Gilimanuk (Bali)</option>
-              <option value="Padangbai - Lembar">Padangbai (Bali) - Lembar (Lombok)</option>
-              <option value="Kayangan - Pototano">Kayangan (Lombok) - Pototano (Sumbawa)</option>
-            </select>
+          <div style="margin-top: 22px;">
+            <a href="jadwal-tarif.html" class="rayival_btn rayival_btn_outline" style="width: 100%;">Periksa Jadwal &amp; Estimasi Tarif</a>
           </div>
-
-          <div class="rayival_form_group">
-            <label class="rayival_label" for="rayival_ferizy_tanggal">Tanggal Keberangkatan</label>
-            <input type="date" id="rayival_ferizy_tanggal" class="rayival_input" required />
-          </div>
-
-          <button type="submit" class="rayival_btn rayival_btn_primary" style="width: 100%; margin-top: 6px;">Buat Simulasi E-Ticket</button>
-        </form>
-
-        <div id="rayival_hasil_tiket" class="rayival_alert_success"></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <div id="rayival_footer_placeholder"></div>
 
   <script src="js/script.js"></script>

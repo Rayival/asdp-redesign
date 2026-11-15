@@ -1,11 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  /* Header */
   const rayivalHeaderPlaceholder = document.getElementById("rayival_header_placeholder");
   const rayivalFooterPlaceholder = document.getElementById("rayival_footer_placeholder");
 
   if (rayivalHeaderPlaceholder) {
     rayivalHeaderPlaceholder.outerHTML = `
       <header id="rayival_header">
+        <div class="rayival_topbar">
+          <div class="rayival_container rayival_topbar_inner">
+            <span>BUMN Jasa Penyeberangan &amp; Kepelabuhanan Indonesia</span>
+            <div class="rayival_topbar_info">
+              <span class="rayival_topbar_hide_mobile">Email: <strong>cs@asdp.id</strong></span>
+              <span>Contact Center 24 Jam: <strong>(021) 191</strong></span>
+            </div>
+          </div>
+        </div>
         <div class="rayival_container rayival_nav_wrapper">
           <a href="index.html" class="rayival_logo">
             <img src="assets/logo.png" alt="Logo PT ASDP Indonesia Ferry" class="rayival_logo_img" />
@@ -15,11 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
               <li><a href="index.html" class="rayival_nav_link">Beranda</a></li>
               <li><a href="tentang.html" class="rayival_nav_link">Tentang</a></li>
               <li><a href="layanan.html" class="rayival_nav_link">Layanan</a></li>
-              <li><a href="jadwal-tarif.html" class="rayival_nav_link">Jadwal & Tarif</a></li>
-              <li><a href="pemesanan.html" class="rayival_nav_link">Ferizy</a></li>
+              <li><a href="jadwal-tarif.html" class="rayival_nav_link">Jadwal &amp; Tarif</a></li>
               <li><a href="berita.html" class="rayival_nav_link">Berita</a></li>
               <li><a href="galeri.html" class="rayival_nav_link">Galeri</a></li>
               <li><a href="kontak.html" class="rayival_nav_link">Kontak</a></li>
+              <li><a href="pemesanan.html" class="rayival_nav_cta">Tiket Ferizy</a></li>
             </ul>
           </nav>
           <button id="rayival_mobile_toggle" aria-label="Buka Navigasi">&#9776;</button>
@@ -31,41 +41,58 @@ document.addEventListener("DOMContentLoaded", () => {
   if (rayivalFooterPlaceholder) {
     rayivalFooterPlaceholder.outerHTML = `
       <footer id="rayival_footer">
-        <div class="rayival_container">
-          <div class="rayival_footer_grid">
-            <div>
-              <h4 class="rayival_footer_title">PT ASDP Indonesia Ferry (Persero)</h4>
-              <p style="font-size: 0.88rem; line-height: 1.7;">BUMN penyedia jasa angkutan penyeberangan dan pengelola pelabuhan terintegrasi terbesar di Indonesia.</p>
+        <div class="rayival_footer_stripe"></div>
+        <div class="rayival_footer_main">
+          <div class="rayival_container">
+            <div class="rayival_footer_grid">
+              <div>
+                <img src="assets/logo.png" alt="Logo PT ASDP Indonesia Ferry" class="rayival_footer_logo" />
+                <p style="font-size: 0.88rem; line-height: 1.7; color: #CBD5E1;">
+                  PT ASDP Indonesia Ferry (Persero) adalah BUMN penyedia jasa angkutan penyeberangan dan pengelola pelabuhan terintegrasi yang menghubungkan seluruh kepulauan Nusantara.
+                </p>
+              </div>
+              <div>
+                <h4 class="rayival_footer_title">Tentang Perusahaan</h4>
+                <ul class="rayival_footer_links">
+                  <li><a href="tentang.html">Profil Korporasi</a></li>
+                  <li><a href="tentang.html">Visi, Misi &amp; AKHLAK</a></li>
+                  <li><a href="layanan.html">Armada &amp; Kawasan</a></li>
+                  <li><a href="galeri.html">Dokumentasi Fasilitas</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="rayival_footer_title">Layanan Pengguna</h4>
+                <ul class="rayival_footer_links">
+                  <li><a href="jadwal-tarif.html">Jadwal Keberangkatan</a></li>
+                  <li><a href="jadwal-tarif.html">Simulasi Tarif</a></li>
+                  <li><a href="pemesanan.html">Pemesanan Tiket Ferizy</a></li>
+                  <li><a href="berita.html">Informasi Operasional</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="rayival_footer_title">Kantor Pusat</h4>
+                <p style="font-size: 0.86rem; line-height: 1.65; color: #CBD5E1;">
+                  Jl. Jend. Ahmad Yani Kav. 52 A, Cempaka Putih Timur, Jakarta Pusat 10510
+                </p>
+                <div class="rayival_callcenter_box">
+                  <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: #CBD5E1;">Layanan Pelanggan 24 Jam</span>
+                  <span class="rayival_callcenter_num">(021) 191</span>
+                  <span style="font-size: 0.8rem; color: #CBD5E1;">WhatsApp: 0811-1021-191</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <h4 class="rayival_footer_title">Navigasi Cepat</h4>
-              <ul class="rayival_footer_links">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="tentang.html">Tentang Perusahaan</a></li>
-                <li><a href="layanan.html">Layanan & Armada</a></li>
-                <li><a href="jadwal-tarif.html">Jadwal & Tarif</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="rayival_footer_title">Informasi Publik</h4>
-              <ul class="rayival_footer_links">
-                <li><a href="pemesanan.html">Panduan Tiket Ferizy</a></li>
-                <li><a href="berita.html">Berita & Pengumuman</a></li>
-                <li><a href="galeri.html">Galeri Fasilitas</a></li>
-                <li><a href="kontak.html">Hubungi Kami</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="rayival_footer_title">Kantor Pusat & Call Center</h4>
-              <p style="font-size: 0.88rem;">Jl. Jend. Ahmad Yani Kav. 52 A, Cempaka Putih Timur, Jakarta Pusat 10510</p>
-              <p style="margin-top: 10px; color: #FFFFFF; font-weight: 700;">Call Center 24 Jam: 021-191</p>
-            </div>
-          </div>
-          <div class="rayival_footer_bottom">
-            <span>&copy; 2026 PT ASDP Indonesia Ferry (Persero).</span>
-            <span>UTS Pemrograman Web - Rayival Dede Saputra (2503010032)</span>
           </div>
         </div>
+          <div class="rayival_footer_bottom">
+            <div class="rayival_container rayival_footer_bottom_inner">
+              <span>&copy; 2026 PT ASDP Indonesia Ferry (Persero). Hak Cipta Dilindungi Undang-Undang.</span>
+              <span>
+                UTS Pemrograman Web - 
+                <a href="https://rayival.vercel.app/" target="_blank" rel="noopener noreferrer" class="rayival_footer_author">Rayival Dede Saputra</a> 
+                (2503010032)
+              </span>
+            </div>
+          </div>
       </footer>
     `;
   }
@@ -135,11 +162,32 @@ document.addEventListener("DOMContentLoaded", () => {
         "merak-bakauheni": { kaki: 22700, motor: 62100, mobil: 481800, truk: 952400 },
         "ketapang-gilimanuk": { kaki: 10600, motor: 31600, mobil: 213400, truk: 442100 },
         "padangbai-lembar": { kaki: 65300, motor: 169400, mobil: 1184100, truk: 2350000 },
-        "kayangan-pototano": { kaki: 21000, motor: 56000, mobil: 412000, truk: 810000 }
+        "kayangan-pototano": { kaki: 21000, motor: 56000, mobil: 412000, truk: 810000 },
+        "ajibata-ambarita": { kaki: 16000, motor: 32000, mobil: 175000, truk: 340000 },
+        "tanjungkalian-tanjungapiapi": { kaki: 48500, motor: 118000, mobil: 895000, truk: 1720000 },
+        "hunimua-waipirit": { kaki: 23000, motor: 58000, mobil: 385000, truk: 745000 }
+      };
+
+      const tarifExpressMerak = {
+        kaki: 84800,
+        motor: 129677,
+        mobil: 749128,
+        truk: 1385000
       };
 
       let harga = tarifDasar[rute][golongan];
-      if (layanan === "express") harga = Math.round(harga * 1.45);
+      let labelLayanan = "DERMAGA REGULER";
+      let catatan = "Sudah termasuk asuransi Jasa Raharja & pas pelabuhan.";
+
+      if (layanan === "express") {
+        if (rute === "merak-bakauheni") {
+          harga = tarifExpressMerak[golongan];
+          labelLayanan = "DERMAGA EXPRESS (EKSEKUTIF)";
+        } else {
+          labelLayanan = "DERMAGA REGULER";
+          catatan = "Catatan: Layanan Express hanya tersedia di lintasan Merak - Bakauheni. Tarif yang ditampilkan adalah tarif Reguler.";
+        }
+      }
 
       const formatRupiah = new Intl.NumberFormat("id-ID", {
         style: "currency",
@@ -147,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
         minimumFractionDigits: 0
       }).format(harga);
 
-      output.innerHTML = `Estimasi Tarif (${layanan.toUpperCase()}): <strong>${formatRupiah}</strong> — Sudah termasuk asuransi Jasa Raharja & pas pelabuhan.`;
+      output.innerHTML = `Estimasi Tarif (<strong>${labelLayanan}</strong>): <strong>${formatRupiah}</strong><br><small>${catatan}</small>`;
     });
   }
 

@@ -3,57 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Berita & Pengumuman - PT ASDP Indonesia Ferry</title>
+  <title>Berita &amp; Pengumuman - PT ASDP Indonesia Ferry (Persero)</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- Header -->
   <div id="rayival_header_placeholder"></div>
 
   <section class="rayival_page_banner">
     <div class="rayival_container">
-      <h1>Berita & Informasi Operasional</h1>
+      <h1>Berita &amp; Informasi Operasional</h1>
       <p class="rayival_breadcrumb"><a href="index.html">Beranda</a> / Berita</p>
     </div>
   </section>
 
   <section class="rayival_section">
     <div class="rayival_container">
-      <!-- FILTER KATEGORI -->
+      <div class="rayival_section_header">
+        <span class="rayival_eyebrow">Publikasi &amp; Media</span>
+        <h2 class="rayival_title">Siaran Pers &amp; Kabar Terkini ASDP</h2>
+        <p class="rayival_subtitle">Informasi resmi seputar operasional penyeberangan, transformasi digital kepelabuhanan, dan konektivitas maritim nasional.</p>
+      </div>
+
       <div class="rayival_filter_bar">
         <button class="rayival_filter_btn rayival_active_filter" data-filter="all">Semua Berita</button>
         <button class="rayival_filter_btn" data-filter="operasional">Info Operasional</button>
         <button class="rayival_filter_btn" data-filter="digital">Transformasi Digital</button>
-        <button class="rayival_filter_btn" data-filter="csr">TJSL & Lingkungan</button>
+        <button class="rayival_filter_btn" data-filter="korporasi">Korporasi &amp; Logistik</button>
       </div>
 
       <div class="rayival_grid_3">
-        <article class="rayival_card rayival_berita_card" data-category="digital">
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Digitalisasi Ferizy" class="rayival_card_img" />
-          <span class="rayival_badge">Transformasi Digital</span>
-          <h3 style="margin-bottom:10px;">ASDP Perluas Penerapan Tiket Online Ferizy di 35 Pelabuhan Nusantara</h3>
-          <p class="rayival_subtitle" style="font-size:0.9rem;">Upaya mempercepat proses boarding dan menghindari antrean panjang di area pelabuhan utama.</p>
+        <article class="rayival_card rayival_berita_card" data-category="operasional">
+          <img src="assets/berita/bebasTarif.png" alt="Stimulus Tarif Jasa Kepelabuhanan Nataru 2026/2027" class="rayival_card_img" />
+          <div class="rayival_card_body">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <span class="rayival_pill rayival_pill_green">Info Operasional</span>
+              <small style="color: var(--rayival-muted); font-weight: 600;">29 Oktober 2026</small>
+            </div>
+            <h3 style="margin: 12px 0 8px; color: var(--rayival-navy); font-size: 1.1rem;">Dukung Stimulus Pemerintah, ASDP Bebaskan 100% Tarif Jasa Kepelabuhanan pada Nataru 2026/2027</h3>
+            <p class="rayival_subtitle" style="font-size: 0.9rem;">
+              Guna mendukung mobilitas masyarakat selama libur Natal dan Tahun Baru 2026/2027, ASDP menghadirkan pembebasan 100% tarif jasa kepelabuhanan di lintasan strategis nasional.
+            </p>
+          </div>
         </article>
 
         <article class="rayival_card rayival_berita_card" data-category="operasional">
-          <img src="https://images.unsplash.com/photo-1500930287596-c1ecaa373bb2?auto=format&fit=crop&w=800&q=80" alt="Kesiapan Armada" class="rayival_card_img" />
-          <span class="rayival_badge">Info Operasional</span>
-          <h3 style="margin-bottom:10px;">Kesiapan 220 Armada Kapal dan Peningkatan Kapasitas Dermaga Merak–Bakauheni</h3>
-          <p class="rayival_subtitle" style="font-size:0.9rem;">Seluruh armada telah menjalani ramp check keselamatan pelayaran untuk menjamin kelancaran arus logistik.</p>
+          <img src="assets/berita/sumpahPemuda.png" alt="Konektivitas Lintasan Perintis ASDP" class="rayival_card_img" />
+          <div class="rayival_card_body">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <span class="rayival_pill rayival_pill_green">Info Operasional</span>
+              <small style="color: var(--rayival-muted); font-weight: 600;">28 Oktober 2026</small>
+            </div>
+            <h3 style="margin: 12px 0 8px; color: var(--rayival-navy); font-size: 1.1rem;">Semangat Sumpah Pemuda, ASDP Hubungkan Nusantara melalui 232 Lintasan Perintis</h3>
+            <p class="rayival_subtitle" style="font-size: 0.9rem;">
+              ASDP menegaskan komitmennya memperkuat konektivitas penyeberangan antarpulau hingga wilayah tertinggal, terdepan, dan terluar (3T) untuk mendorong ekonomi daerah.
+            </p>
+          </div>
         </article>
 
-        <article class="rayival_card rayival_berita_card" data-category="csr">
-          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Program Pesisir" class="rayival_card_img" />
-          <span class="rayival_badge">TJSL & Lingkungan</span>
-          <h3 style="margin-bottom:10px;">Program Konservasi Terumbu Karang dan Bersih Pantai di Kawasan Pelabuhan</h3>
-          <p class="rayival_subtitle" style="font-size:0.9rem;">Komitmen keberlanjutan lingkungan maritim ASDP bersama masyarakat pesisir.</p>
+        <article class="rayival_card rayival_berita_card" data-category="korporasi">
+          <img src="assets/berita/logistikAwards.png" alt="Indonesia Logistics Awards 2026" class="rayival_card_img" />
+          <div class="rayival_card_body">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <span class="rayival_pill rayival_pill_blue">Korporasi &amp; Logistik</span>
+              <small style="color: var(--rayival-muted); font-weight: 600;">9 Oktober 2026</small>
+            </div>
+            <h3 style="margin: 12px 0 8px; color: var(--rayival-navy); font-size: 1.1rem;">ASDP Raih Indonesia Logistics Awards 2026, Perkuat Konektivitas Logistik Nasional</h3>
+            <p class="rayival_subtitle" style="font-size: 0.9rem;">
+              PT ASDP Indonesia Ferry (Persero) meraih penghargaan Integrated Maritime Logistics Connectivity of the Year atas peran integrasi pelabuhan dan distribusi logistik antarpulau.
+            </p>
+          </div>
+        </article>
+
+        <article class="rayival_card rayival_berita_card" data-category="digital">
+          <img src="assets/berita/steril.png" alt="Sterilisasi Enam Pelabuhan ASDP" class="rayival_card_img" />
+          <div class="rayival_card_body">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <span class="rayival_pill rayival_pill_blue">Transformasi Digital</span>
+              <small style="color: var(--rayival-muted); font-weight: 600;">17 Juli 2026</small>
+            </div>
+            <h3 style="margin: 12px 0 8px; color: var(--rayival-navy); font-size: 1.1rem;">ASDP Percepat Sterilisasi Enam Pelabuhan Demi Layanan Modern Berstandar Keselamatan Tinggi</h3>
+            <p class="rayival_subtitle" style="font-size: 0.9rem;">
+              Implementasi registrasi digital, Face Recognition, zonasi kawasan, dan One Gate System diterapkan di Pelabuhan Merak, Bakauheni, Ketapang, Gilimanuk, Kayangan, dan Lembar.
+            </p>
+          </div>
+        </article>
+
+        <article class="rayival_card rayival_berita_card" data-category="operasional">
+          <img src="assets/berita/stimulus.png" alt="Stimulus Libur Sekolah 2026 ASDP" class="rayival_card_img" />
+          <div class="rayival_card_body">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <span class="rayival_pill rayival_pill_green">Info Operasional</span>
+              <small style="color: var(--rayival-muted); font-weight: 600;">7 Juni 2026</small>
+            </div>
+            <h3 style="margin: 12px 0 8px; color: var(--rayival-navy); font-size: 1.1rem;">Stimulus Libur Sekolah 2026, ASDP Berikan Diskon Tarif Jasa Pelabuhan hingga 100%</h3>
+            <p class="rayival_subtitle" style="font-size: 0.9rem;">
+              Program stimulus berlaku di 14 pelabuhan pada tujuh lintasan strategis nasional melalui pemesanan tiket elektronik Ferizy untuk penumpang pejalan kaki, Golongan II, dan Golongan IVA.
+            </p>
+          </div>
+        </article>
+
+        <article class="rayival_card rayival_berita_card" data-category="digital">
+          <img src="assets/berita/pelangganFerizy.png" alt="Evaluasi Digitalisasi Ferizy Mudik 2026" class="rayival_card_img" />
+          <div class="rayival_card_body">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <span class="rayival_pill rayival_pill_blue">Transformasi Digital</span>
+              <small style="color: var(--rayival-muted); font-weight: 600;">10 April 2026</small>
+            </div>
+            <h3 style="margin: 12px 0 8px; color: var(--rayival-navy); font-size: 1.1rem;">Digitalisasi Ferizy Dukung Kelancaran 4,72 Juta Penumpang Selama Angkutan Lebaran 2026</h3>
+            <p class="rayival_subtitle" style="font-size: 0.9rem;">
+              Sistem reservasi daring Ferizy bersama pola operasi Tiba Bongkar Berangkat (TBB) menjaga stabilitas arus penyeberangan di 15 lintasan pantauan nasional.
+            </p>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <div id="rayival_footer_placeholder"></div>
 
   <script src="js/script.js"></script>
