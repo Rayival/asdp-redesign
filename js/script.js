@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="rayival_container rayival_nav_wrapper">
           <a href="index.html" class="rayival_logo">
-            <img src="assets/logo.png" alt="Logo PT ASDP Indonesia Ferry" class="rayival_logo_img" />
+            <img src="assets/logo.webp" alt="Logo PT ASDP Indonesia Ferry" class="rayival_logo_img" />
           </a>
           <nav id="rayival_nav_menu">
             <ul class="rayival_nav_list">
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="rayival_container">
             <div class="rayival_footer_grid">
               <div>
-                <img src="assets/logo.png" alt="Logo PT ASDP Indonesia Ferry" class="rayival_footer_logo" />
+                <img src="assets/logo.webp" alt="Logo PT ASDP Indonesia Ferry" class="rayival_footer_logo" />
                 <p style="font-size: 0.88rem; line-height: 1.7; color: #CBD5E1;">
                   PT ASDP Indonesia Ferry (Persero) adalah BUMN penyedia jasa angkutan penyeberangan dan pengelola pelabuhan terintegrasi yang menghubungkan seluruh kepulauan Nusantara.
                 </p>
