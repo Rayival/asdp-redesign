@@ -45,7 +45,7 @@ redesign-asdp-rayival/
 │   └── script.js       # Logika terpusat (Header/Footer, Slideshow, Kalkulator, Filter, Lightbox, Validasi)
 ├── assets/
 │   ├── logo.png        # Logo resmi PT ASDP Indonesia Ferry (Persero)
-│   ├── home1.png        # Aset visual 1
+│   ├── home1.png       # Aset visual 1
 │   ├── home2.jpeg      # Aset visual 2
 │   ├── home3.png       # Aset visual 3
 │   ├── home4.jpeg      # Aset visual 4
